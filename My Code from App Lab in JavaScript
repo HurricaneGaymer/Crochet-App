@@ -1,0 +1,17 @@
+var currentCount = 0; // start at zero
+
+//Adding Count Function
+onEvent("Count_Button_Addition", "click", function() {
+  currentCount = currentCount + 1; // add 1 each click
+  setText("Count-Display", currentCount); // show the updated count
+});
+//Subtracting the Count
+onEvent("Count-Subtraction", "click", function( ) {
+  currentCount = currentCount - 1;
+  setText("Count-Display", currentCount);
+});
+//Resetting the Count
+onEvent("Reset", "click", function( ) {
+  currentCount = 0;
+  setText("Count-Display", currentCount);
+});
