@@ -1,4 +1,17 @@
+/* This centers your app on the screen */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Soft gray background outside the app */
+}
 
+#divApplab {
+  position: relative !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Adds a nice shadow around your app */
+}
 
 @font-face {
   font-family: 'FontAwesome';
